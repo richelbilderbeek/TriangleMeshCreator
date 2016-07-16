@@ -60,7 +60,7 @@ You can change the two triangulation parameters here:
 
 Click 'Create Triangle 2D mesh' to view the triangulated version of your mesh.
 
-![Create 2D mesh](Screenshots/CreateTriangle2Dmesh.png.png)
+![Create 2D mesh](Screenshots/CreateTriangle2Dmesh.png)
 
 When done, click on the tab 'Create 3D mesh'
 
