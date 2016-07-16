@@ -2,10 +2,15 @@
 
 [![Build Status](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator)
 
-Creates a three-dimensional mesh for use with OpenFOAM.
+TriangleMeshCreator creates all the files for a three-dimensional mesh for use with OpenFOAM.
 
-You will need to supply a 2D mesh, a height, layer height and a sculpt function.
-The sculpt function determines which cells to remove.
+There are a desktop and console version supplied to demonstrate how to do this.
+For those, you will need to supply a 2D mesh, a height, layer height and a percentage
+of cells that are randomly removed.
+
+TriangleMeshCreator, however, is intended to be used as a library.
+The most important class in `ribi::trim::Dialog`, where you can
+supply your own sculpting function. This sculpting function determines which cells will be removed.
 
 ## Installation
 
@@ -20,13 +25,8 @@ make
 qmake TriangleMeshCreatorDesktop.pro
 make
 ```
-Start desktop version:
 
-```
-./TriangleMeshCreatorDesktop
-```
-
-## Usage
+## Usage of desktop version
 
 ### Start the main program
 
@@ -86,6 +86,21 @@ If the checkbox 'Show in meshlab' was checked, meshlab will show the mesh:
 
 ![Meshlab displaying the 3D mesh](Screenshots/Meshlab.png)
 
+## Usage of console version
+
+The console version is used from the command-line:
+
+```
+ToolTriangleMeshCreatorConsole --help
+```
+
+Every option is matched in the desktop version by a widget of the same name.
+
+A light example is:
+
+```
+TriangleMeshCreator --layer_height 1 --WKT "POLYGON((10 10,10 -10,-10 -10,-10 10))" --strategy 1 --n_layers 10 --fraction 0.9 --triangle_max_area 10.0 --triangle_min_angle 20.0
+```
 
 ## Screenshots
 

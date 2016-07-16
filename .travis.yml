@@ -24,3 +24,6 @@ script:
   - rm Makefile
   - qmake ToolTriangleMeshCreatorDesktop.pro
   - make
+
+after_failure:
+  - ls
