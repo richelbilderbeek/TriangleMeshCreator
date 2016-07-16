@@ -44,7 +44,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include "polyfilefrompolygons.h"
 #include "testtimer.h"
 #include "ribi_regex.h"
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #include "trianglefile.h"
 #include "trianglemeshdialog.h"
@@ -501,18 +500,9 @@ ribi::Help ribi::TriangleMeshCreatorMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::TriangleMeshCreatorMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramTriangleMeshCreator
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::TriangleMeshCreatorMenuDialog::GetVersion() const noexcept
 {
-  return "1.11";
+  return "1.12";
 }
 
 std::vector<std::string> ribi::TriangleMeshCreatorMenuDialog::GetVersionHistory() const noexcept
@@ -529,7 +519,8 @@ std::vector<std::string> ribi::TriangleMeshCreatorMenuDialog::GetVersionHistory(
     "2014-05-23: version 1.8: support linestring as shape",
     "2014-06-17: version 1.9: allow non-surface as valid input",
     "2014-06-24: version 1.10: moved main dialog to TriangleMesh classes, changed GUI in desktop version to show all data in all steps",
-    "2014-08-09: version 1.11: increased use of TDD"
+    "2014-08-09: version 1.11: increased use of TDD",
+    "2016-07-16: version 1.12: moved to own GitHub, tested by Travis CI",
   };
 }
 

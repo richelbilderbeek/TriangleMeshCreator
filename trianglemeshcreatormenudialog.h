@@ -37,7 +37,6 @@ struct TriangleMeshCreatorMenuDialog final : public MenuDialog
   TriangleMeshCreatorMenuDialog();
   About GetAbout() const noexcept override;
   Help GetHelp() const noexcept override;
-  boost::shared_ptr<const Program> GetProgram() const noexcept override;
   std::string GetVersion() const noexcept override;
   std::vector<std::string> GetVersionHistory() const noexcept override;
   static void TestDeep() noexcept;

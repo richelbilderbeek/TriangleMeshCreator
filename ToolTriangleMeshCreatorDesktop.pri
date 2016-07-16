@@ -1,13 +1,13 @@
-include(../../Tools/ToolTriangleMeshCreator/ToolTriangleMeshCreatorConsole.pri)
+include(ToolTriangleMeshCreatorConsole.pri)
 
 SOURCES += \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormenudialog.cpp \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormaindialog.cpp
+    $$PWD/qttrianglemeshcreatormenudialog.cpp \
+    $$PWD/qttrianglemeshcreatormaindialog.cpp
 
 FORMS += \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormenudialog.ui \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormaindialog.ui
+    $$PWD/qttrianglemeshcreatormenudialog.ui \
+    $$PWD/qttrianglemeshcreatormaindialog.ui
 
 HEADERS += \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormenudialog.h \
-    ../../Tools/ToolTriangleMeshCreator/qttrianglemeshcreatormaindialog.h
+    $$PWD/qttrianglemeshcreatormenudialog.h \
+    $$PWD/qttrianglemeshcreatormaindialog.h

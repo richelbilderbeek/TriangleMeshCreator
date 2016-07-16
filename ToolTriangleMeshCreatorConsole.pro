@@ -3,25 +3,23 @@
 QMAKE_CXXFLAGS_DEBUG += -pg
 QMAKE_LFLAGS_DEBUG += -pg
 
-include(../../ConsoleApplication.pri)
-include(../../Libraries/Apfloat.pri)
-include(../../Libraries/Boost.pri)
-include(../../Libraries/GeneralConsole.pri)
-
-include(../../Classes/CppContainer/CppContainer.pri)
-include(../../Classes/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
-include(../../Classes/CppGeometry/CppGeometry.pri)
-include(../../Classes/CppOpenFoam/CppOpenFoam.pri)
-include(../../Classes/CppPhp/CppPhp.pri)
-include(../../Classes/CppPlane/CppPlane.pri)
-include(../../Classes/CppPolyFile/CppPolyFile.pri)
-include(../../Classes/CppPolyFileFromPolygons/CppPolyFileFromPolygons.pri)
-include(../../Classes/CppRibiRegex/CppRibiRegex.pri)
-include(../../Classes/CppTriangleFile/CppTriangleFile.pri)
-include(../../Classes/CppTriangleMesh/CppTriangleMesh.pri)
-include(../../Classes/CppXml/CppXml.pri)
-include(../../Tools/ToolTriangle/ToolTriangleConsole.pri)
-
-include(../../Tools/ToolTriangleMeshCreator/ToolTriangleMeshCreatorConsole.pri)
+include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
+include(../RibiLibraries/Apfloat.pri)
+include(../RibiLibraries/Boost.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiClasses/CppContainer/CppContainer.pri)
+include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
+include(../RibiClasses/CppGeometry/CppGeometry.pri)
+include(../RibiClasses/CppOpenFoam/CppOpenFoam.pri)
+include(../RibiClasses/CppPhp/CppPhp.pri)
+include(../RibiClasses/CppPlane/CppPlane.pri)
+include(../RibiClasses/CppPolyFile/CppPolyFile.pri)
+include(../RibiClasses/CppPolyFileFromPolygons/CppPolyFileFromPolygons.pri)
+include(../RibiClasses/CppRibiRegex/CppRibiRegex.pri)
+include(../RibiClasses/CppTriangleFile/CppTriangleFile.pri)
+include(../RibiClasses/CppTriangleMesh/CppTriangleMesh.pri)
+include(../RibiClasses/CppXml/CppXml.pri)
+include(../Triangle/ToolTriangleConsole.pri)
+include(ToolTriangleMeshCreatorConsole.pri)
 
 SOURCES += main.cpp

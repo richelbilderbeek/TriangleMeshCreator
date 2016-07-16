@@ -1,32 +1,34 @@
-include(../../DesktopApplication.pri)
-include(../../Libraries/Apfloat.pri)
-include(../../Libraries/Boost.pri)
-include(../../Libraries/GeneralConsole.pri)
-include(../../Libraries/GeneralDesktop.pri)
+include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
+include(../RibiLibraries/Apfloat.pri)
+include(../RibiLibraries/Boost.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiLibraries/GeneralDesktop.pri)
 
 #Console
-include(../../Classes/CppContainer/CppContainer.pri)
-include(../../Classes/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
-include(../../Classes/CppGeometry/CppGeometry.pri)
-include(../../Classes/CppOpenFoam/CppOpenFoam.pri)
-include(../../Classes/CppPhp/CppPhp.pri)
-include(../../Classes/CppPlane/CppPlane.pri)
-include(../../Classes/CppPolyFile/CppPolyFile.pri)
-include(../../Classes/CppPolyFileFromPolygons/CppPolyFileFromPolygons.pri)
-include(../../Classes/CppRibiRegex/CppRibiRegex.pri)
-include(../../Classes/CppTriangleFile/CppTriangleFile.pri)
-include(../../Classes/CppTriangleMesh/CppTriangleMesh.pri)
-include(../../Classes/CppXml/CppXml.pri)
+include(../RibiClasses/CppContainer/CppContainer.pri)
+include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
+include(../RibiClasses/CppGeometry/CppGeometry.pri)
+include(../RibiClasses/CppOpenFoam/CppOpenFoam.pri)
+include(../RibiClasses/CppPhp/CppPhp.pri)
+include(../RibiClasses/CppPlane/CppPlane.pri)
+include(../RibiClasses/CppPolyFile/CppPolyFile.pri)
+include(../RibiClasses/CppPolyFileFromPolygons/CppPolyFileFromPolygons.pri)
+include(../RibiClasses/CppRibiRegex/CppRibiRegex.pri)
+include(../RibiClasses/CppTriangleFile/CppTriangleFile.pri)
+include(../RibiClasses/CppTriangleMesh/CppTriangleMesh.pri)
+include(../RibiClasses/CppXml/CppXml.pri)
 #include(../../Tools/ToolTriangle/ToolTriangleConsole.pri)
 #include(../../Tools/ToolTriangleCpp/ToolTriangleCppConsole.pri)
 
 #Desktop
-include(../../Classes/CppQtNavigationableGraphicsView/CppQtNavigationableGraphicsView.pri)
-include(../../Tools/ToolTriangleMeshCreator/ToolTriangleMeshCreatorDesktop.pri)
+include(../RibiClasses/CppQtNavigationableGraphicsView/CppQtNavigationableGraphicsView.pri)
+include(ToolTriangleMeshCreatorDesktop.pri)
 
 #gprof
 QMAKE_CXXFLAGS_DEBUG += -pg
 QMAKE_LFLAGS_DEBUG += -pg
 
+QT += svg
 
 SOURCES += qtmain.cpp
+

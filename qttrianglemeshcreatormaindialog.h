@@ -28,6 +28,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <boost/geometry/geometries/linestring.hpp>
 #include <boost/geometry/geometries/point_xy.hpp>
 #include <boost/geometry/geometries/polygon.hpp>
+#include <boost/shared_ptr.hpp>
 #include <boost/units/quantity.hpp>
 #include <boost/units/systems/si/area.hpp>
 #include <boost/units/systems/si/length.hpp>

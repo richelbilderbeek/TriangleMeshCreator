@@ -73,21 +73,9 @@ ribi::QtTriangleMeshCreatorMainDialog::QtTriangleMeshCreatorMainDialog(QWidget *
     assert(ui->view_triangle_mesh_2->scene());
     assert(ui->view_triangle_mesh_1->scene() == ui->view_triangle_mesh_2->scene());
   }
-
-
-  QObject::connect(ui->edit_wkt,&QPlainTextEdit::textChanged,this,&ribi::QtTriangleMeshCreatorMainDialog::DisplayPolygons);
-  QObject::connect(
-    ui->box_triangle_max_area,
-    static_cast<void (QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged),
-    this,
-    &ribi::QtTriangleMeshCreatorMainDialog::on_button_create_2d_mesh_clicked
-  );
-  QObject::connect(
-    ui->box_triangle_min_angle,
-    static_cast<void (QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged),
-    this,
-    &ribi::QtTriangleMeshCreatorMainDialog::on_button_create_2d_mesh_clicked
-  );
+  QObject::connect(ui->edit_wkt, SIGNAL(textChanged()), this, SLOT(DisplayPolygons()));
+  QObject::connect(ui->box_triangle_max_area, SIGNAL(valueChanged(double)), this, SLOT(on_button_create_2d_mesh_clicked()));
+  QObject::connect(ui->box_triangle_min_angle, SIGNAL(valueChanged(double)), this, SLOT(on_button_create_2d_mesh_clicked()));
 
   DisplayPolygons();
 }

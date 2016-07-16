@@ -1,14 +1,14 @@
-INCLUDEPATH += ../../Tools/ToolTriangleMeshCreator
+INCLUDEPATH += $$PWD
 
 HEADERS += \
-    ../../Tools/ToolTriangleMeshCreator/trianglemeshcreatormenudialog.h
+    $$PWD/trianglemeshcreatormenudialog.h
 
 SOURCES += \
-    ../../Tools/ToolTriangleMeshCreator/trianglemeshcreatormenudialog.cpp
+    $$PWD/trianglemeshcreatormenudialog.cpp
 
 RESOURCES += \
-    ../../Tools/ToolTriangleMeshCreator/ToolTriangleMeshCreator.qrc
+    $$PWD/ToolTriangleMeshCreator.qrc
 
 OTHER_FILES += \
-    ../../Tools/ToolTriangleMeshCreator/Licence.txt
+    $$PWD/Licence.txt
 
