@@ -4,9 +4,7 @@ compiler: gcc
 
 install: 
   - sudo apt-get install -qq g++-5
-  - cd ..; git clone https://github.com/richelbilderbeek/RibiClasses
-  - cd ..; git clone https://github.com/richelbilderbeek/RibiLibraries
-  - cd ..; git clone https://github.com/richelbilderbeek/Triangle
+  - ./download_other_githubs.sh
 
 addons:
   apt:
