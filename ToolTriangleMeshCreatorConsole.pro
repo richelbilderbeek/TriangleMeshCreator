@@ -23,3 +23,6 @@ include(../Triangle/ToolTriangleConsole.pri)
 include(ToolTriangleMeshCreatorConsole.pri)
 
 SOURCES += main.cpp
+
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable

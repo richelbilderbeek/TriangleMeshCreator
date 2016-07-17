@@ -32,3 +32,5 @@ QT += svg
 
 SOURCES += qtmain.cpp
 
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable
