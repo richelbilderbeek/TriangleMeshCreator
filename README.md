@@ -1,6 +1,9 @@
 # TriangleMeshCreator
 
-[![Build Status](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator)
+Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
+---|---|---
+master|[![Build Status](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/branch/master)
+develop|[![Build Status](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/branch/develop)
 
 TriangleMeshCreator creates all the files for a three-dimensional mesh for use with OpenFOAM.
 
