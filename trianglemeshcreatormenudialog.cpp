@@ -463,7 +463,6 @@ ribi::About ribi::TriangleMeshCreatorMenuDialog::GetAbout() const noexcept
   a.AddLibrary("FileIo version: " + fileio::FileIo().GetVersion());
   a.AddLibrary("Geometry version: " + Geometry().GetVersion());
   a.AddLibrary("ribi::foam::Mesh version: " + ribi::foam::Mesh::GetVersion());
-  a.AddLibrary("Plane version: " + Plane::GetVersion());
   a.AddLibrary("PolyFile version: " + PolyFile::GetVersion());
   a.AddLibrary("PolyFileFromPolygons version: " + PolyFileFromPolygons::GetVersion());
   a.AddLibrary("ribi::Regex version: " + ribi::Regex::GetVersion());
