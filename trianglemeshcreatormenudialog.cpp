@@ -532,16 +532,7 @@ void ribi::TriangleMeshCreatorMenuDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-
-  Geometry();
-  ribi::trim::Dialog();
-
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   const bool verbose{false};
-  if (verbose) { TRACE("Constructor"); }
-  {
-    TriangleMeshCreatorMenuDialog();
-  }
   if (verbose) { TRACE("Simple run"); }
   {
     TriangleMeshCreatorMenuDialog().Execute(
