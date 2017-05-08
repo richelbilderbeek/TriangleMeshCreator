@@ -36,6 +36,13 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
+  # Build Triangle
+  - cd ../Triangle
+  - qmake
+  - make
+  - cd ..
+  - cd TriangleMeshCreator
+  - ln -s ../Triangle/ToolTriangleConsole
   # Console
   - qmake -qt=qt5 ToolTriangleMeshCreatorConsole.pro
   - make debug
