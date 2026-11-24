@@ -1,5 +1,7 @@
 # TriangleMeshCreator
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/TriangleMeshCreator/).
+
 Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
 ---|---|---
 master|[![Build Status](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TriangleMeshCreator)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/TriangleMeshCreator/branch/master)
