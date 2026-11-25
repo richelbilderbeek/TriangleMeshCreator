@@ -22,7 +22,6 @@
 #include "plane.h"
 #include "polyfile.h"
 #include "polyfilefrompolygons.h"
-#include "testtimer.h"
 #include "ribi_regex.h"
 #include "trace.h"
 #include "trianglefile.h"
@@ -546,7 +545,6 @@ void ribi::TriangleMeshCreatorMenuDialog::TestDeep() noexcept
     using ribi::trim::Dialog;
     using ribi::trim::Template;
     //This is the longest test by far
-    //const TestTimer test_timer(boost::lexical_cast<std::string>(__LINE__),__FILE__,1.0);
     for (CreateVerticalFacesStrategy strategy: CreateVerticalFacesStrategies().GetAll())
     {
       const boost::shared_ptr<Template> my_template {

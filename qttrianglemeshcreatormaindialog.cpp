@@ -19,7 +19,6 @@
 #include "qtnavigationablegraphicsview.h"
 #include "trace.h"
 #include "trianglemeshface.h"
-#include "testtimer.h"
 #include "trianglemeshpoint.h"
 #include "trianglefile.h"
 #include "trianglemeshdialog.h"
@@ -240,7 +239,6 @@ void ribi::QtTriangleMeshCreatorMainDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   #ifdef FIX_ISSUE_233
   QtTriangleMeshCreatorMainDialog d;
   d.SetShowMesh(false);
